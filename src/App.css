@@ -1,0 +1,32 @@
+.navbar {
+  background-color: black;
+}
+
+.header__bg {
+  background-color: black !important;
+}
+
+.header__title {
+  color: #ffd700;
+  font-family: 'Londrina Outline', cursive;
+  margin: 0;
+}
+
+.cards {
+  border: none;
+  width: 160px;
+  padding: 0 !important;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card-image {
+  height: 160px;
+  width: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 10px solid black;
+}
+
+footer {
+  background-color: black;
+}
