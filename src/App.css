@@ -1,3 +1,7 @@
+body {
+ padding-top: 65px;
+}
+
 .navbar {
   background-color: black;
 }
@@ -7,8 +11,7 @@
 }
 
 .header__title {
-  color: #ffd700;
-  font-family: 'Londrina Outline', cursive;
+  font-family: 'Lalezar', cursive;
   margin: 0;
 }
 
