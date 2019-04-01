@@ -26,7 +26,6 @@ class App extends Component {
 }
 
   game = id => {
-    console.log(id)
     const picStatus = this.state.availableTroopers.find(pic => pic.id === id);
 
     if (picStatus === undefined) {
