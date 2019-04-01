@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Troopers from "../troopers.json";
 
 function shuffle(a) {
@@ -12,70 +12,18 @@ function shuffle(a) {
 shuffle(Troopers);
 console.log(Troopers)
 
-
-class Cards extends Component {
-    render() {
-        return (
-            <div className="container">
-                <div className="row text-center">
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                </div>
-                <div className="row text-center">
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                </div>
-                <div className="row text-center">
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                </div>
-                <div className="row text-center">
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                    <div className="col-sm-6 col-md-3 cards">
-                        <img className="card-image" src={Troopers[0].image} alt="Storm Trooper" />
-                    </div>
-                </div>
+export function Cards({
+    id,
+    image,
+    clicked
+}) {
+    return (
+        <div className="text-center">
+            <div key={id} className="col-sm-6 col-md-3 cards">
+                <img className="card-image" src={image} alt="Storm Trooper" />
             </div>
-        )
-    };
-};
+        </div>
+    )
+}
 
 export default Cards;

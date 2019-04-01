@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <div>
                 <footer class="footer font-small">
-                    <div class="container text-center py-3 text-white">© 2019 Copyright:
+                    <div class="container text-center py-3 text-white">© 2019 Copyright: Mario Miramontes
                     </div>            
                 </footer>
             </div>

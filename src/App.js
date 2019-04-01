@@ -5,15 +5,26 @@ import Nav from "./components/nav";
 import Header from "./components/header";
 import Cards from "./components/cards";
 import Footer from "./components/Footer";
+import Troopers from "./troopers.json";
 
 class App extends Component {
+
   render() {
     return (
       <div>
         <Nav />
         <Header />
         <div className="container">
-          <Cards />
+          <div className="row">
+            {Troopers.map(pics => {
+              return (
+                <Cards 
+                key={pics.id}
+                image={pics.image}
+                />
+              )
+            })}
+          </div>
         </div>
         <Footer />
       </div>
